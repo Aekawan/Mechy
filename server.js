@@ -6,7 +6,9 @@ const routes = require('./routes');
 const firebase = require('./app/firebase/firebase');
 const mongodb = require('./app/mongodb/mongodb');
 const port = process.env.PORT || 8080;
+const boom = require('express-boom');
 
+app.use(boom());
 app.use(bodyParser.urlencoded({
     extended: true
 }));

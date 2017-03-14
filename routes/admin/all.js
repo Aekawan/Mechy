@@ -1,20 +1,22 @@
 var mongoose = require('mongoose');
-var Admins = require('./app/models/Admins');
+var Admins = require('../../app/models/Admins');
 var firebase = require("firebase-admin");
+
 module.exports = (req, res) => {
     var token = req.body.token || req.query.token || req.headers['x-access-token'];
     if (token) {
-        firebase.auth().verifyIdToken(token).then(function (decodedToken) {
+        firebase.auth().verifyIdToken(token).then(function(decodedToken) {
             var uid = decodedToken.uid;
+
             if (uid) {
                 Admins.find({
                     'data.userid': uid
-                }).count(function (err, user) {
+                }).count( (err, user) => {
                     if (err) {
                         res.send(err);
                     }
                     if (user == 1) {
-                        Admins.find({}, function (err, data) {
+                        Admins.find({}, (err, data) => {
                             if (err) res.send(err);
                             res.json(data);
                         });
@@ -27,7 +29,7 @@ module.exports = (req, res) => {
             else {
                 res.status(403).json({"message": 'Token Error'});
             }
-        }).catch(function (error) {
+        }).catch( (error) => {
             res.json({"message": 'Token Error'});
         });
     }

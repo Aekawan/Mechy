@@ -1,9 +1,8 @@
 var mongoose   = require('mongoose');
-var User   = require('./app/models/User');
+const User = require('../../app/models/User');
 
 module.exports = (req, res) => {
   var user = new User();      // create a new instance of the Bear model
-  user.status = '200 OK';  // set the bears name (comes from the request)
   user.data.userid = req.body.userid;
   user.data.email =  req.body.email;
   user.data.firename =  req.body.firename;

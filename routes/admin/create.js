@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
-var Admins = require('./app/models/Admins');
+var Admins = require('../../app/models/Admins');
+
 
 module.exports = (req, res) => {
 

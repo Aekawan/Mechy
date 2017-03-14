@@ -1,6 +1,6 @@
-var mongoose = require('mongoose');
-var User = require('./app/models/User');
-var firebase = require("firebase-admin");
+const mongoose = require('mongoose');
+const User = require('../../app/models/User');
+const firebase = require("firebase-admin");
 
 module.exports = (req, res) => {
     var token = req.params.update || req.headers['x-access-token'] || req.body.token;

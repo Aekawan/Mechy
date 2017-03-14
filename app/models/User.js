@@ -1,8 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var CustomerSchema = new Schema({
-    status: String
-    , data: {
+      data: {
         userid: String
         , email: String
         , firename: String
