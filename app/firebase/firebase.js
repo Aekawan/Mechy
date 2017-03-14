@@ -1,0 +1,10 @@
+const firebase = require("firebase-admin");
+
+module.exports = firebase.initializeApp({
+    credential: firebase.credential.cert({
+        project_id: "mechy-c5a2e",
+        private_key: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCv8HrMhA+Vg+Rw\nVO+nPwcMadJe+mBXForvaDn2nsZ5KciC+sOo8gP7AhlpFIcIIQgiGqpa+0Sc2fCq\nOVPfBmYS7y6fZdLXCiq9XCJpsyghfayzt4NEilOZLUYjXofgb90hc/ceGJAl2Olm\ns34GBsvf6wQM85DjqtaC/wJXxHAxlbJ6fRv4fTi3eXZPlBz+IEp1gP0FbvDt7vXQ\nPgeHKoaelOtyEIQ2jY8s27WzwBXtE5RiVOWi7cKfl+rvw1+9TbwQpVP+JihVlaN9\nD1FnO/rbX+hyGU1iyE8rERHSGJXfcear/bYhJJ4+ak/h7PJXXhHJ6CXYWEao9gbM\nL+EY1l4fAgMBAAECggEAAyYlvIVclgt/Sjdq9q5dHO7D8ik/Ei/4GqLd7rkWylJi\nIV4FpH94bMSz2bqhVBbrQ1kA1ZILv1bzRMiz5JkDuLEJP5cd9/VZoHwGraekPz01\nmx3cvpxPNL2ntLhbbDv0VEX0FVjRM6w3OTxbNBZpDb/yGZ0+aaTEJCIWU6XTcD+7\nEPBylKv3dSZKDeCiKvwRahma73GBnVTBSWb0Sr0YXVchc/trrOtyF72qPqZoqd/e\ngHLcpNExLddBw1+15tKTfE4mhCCZ8084CcYccvyTu0qefF/p/LpLMgo9NdOtrXnv\nkj3hJZ90HHXOxuG3gPRkyn4zyd3chcFbJd2gsHjTIQKBgQDcAERKA7R03sygpQ0y\nxJNSWsFVqDRvmES8YN51zz1s2wM0L1gDVYLMBhPiTOvmcLALh5RgJy3e3uShuDxq\nnhG7Mh2uMDGtNorJCi7C3qvoxHmxW4INHO6hAE6YBsybmY8Bx6E501iniW7aI2PD\ngKjoOBvpc88kUy/InLqB/4afTwKBgQDMun3j033hENGsYbOlH/by1HhHw0Uvvzbb\nVnDgkk3ClvB6kHFuQQr6U5LLscMYEmyeZCqRVq8V8Q4pbxNyRxGYyvelTrF2jr8L\n/d2rwbynZZvXt5FHjZdZ2iIDDhqLXxGWgPZDO40q4tTHb2yCR4/l8EyAeEEHW0HK\nP+Awl1ggMQKBgQCVIw0oC4jqbRrUj+75im7ANku3kHYzbEq0VQqZXGqsf2+Vkb6d\nS/uF6VzTXQfRyHRe7IL2B7k9y2W8B5PVRuCIQPoD2iHi5QWCMYfvjFmHSqGgTINF\n9mYB+J5OytUrahaaw0SVWaNQt4bRE4qOvopCGb86K8qxOj87RJvegmU1WwKBgGHE\neZQQDqApiQfaTJEBl8vVHW+f1+16Ujciq5sDIzFXJZZSXmj5lMWAnay6wmE/gzGM\nwitQCyLeUBYHXnEHcWbXHraJwwPMHX4biP2Z8n66blbw6ecSvgGBwxZUaOa/ysVl\n5rSqvrqJQnXPRzFb/WMgg1gilWNu+Bces/BghgwxAoGAXwk/SzOQyKFa6evi3Bkc\nIbruUBJ6L+zdPPvaGiVfaSlXsai/ec4whNDru7TE4lA+Jv3DkooVNUVsm2D7nIDO\nNUpvg2QF2ppqhVFHLlCKjdGVVVajAk0xJqJ/WG7auXQ+bQvEZRLgut4uXqbuNPu1\nOrLpZgAGCunHIDLcQfIkTw4=\n-----END PRIVATE KEY-----\n",
+        client_email: "firebase-adminsdk-8qvo6@mechy-c5a2e.iam.gserviceaccount.com"
+     }),
+     databaseURL: "https://mechy-c5a2e.firebaseio.com"
+});

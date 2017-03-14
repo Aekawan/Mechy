@@ -1,0 +1,28 @@
+{
+  "name": "mechy",
+  "version": "1.0.0",
+  "description": "car repair shop delivery",
+  "main":"server.js",
+  "start": "nodemon server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaabTech/Mechy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaabTech/Mechy/issues"
+  },
+  "homepage": "https://github.com/JaabTech/Mechy#readme",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "firebase-admin": "^4.1.2",
+    "mongoose": "^4.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
